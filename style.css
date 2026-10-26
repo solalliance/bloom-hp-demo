@@ -32,3 +32,9 @@ body{padding-bottom:88px}.staff-section{background:#f7fbfe}.staff-section .secti
 .text-link,.white-button,.staff-copy summary,.recruit-faq-list summary{font-size:14px}.hero-bottom{font-size:12px}.fixed-recruit-cta>a{font-size:14px}.fixed-cta-message small{font-size:11px}.fixed-cta-message p{font-size:14px}
 @media(max-width:1000px){.fixed-recruit-cta>a{font-size:13px}.fixed-cta-message p{font-size:12px}}
 @media(max-width:720px){.hero-description{font-size:14px}.hero .eyebrow{font-size:10px!important}.entrances p{font-size:13px}.staff-copy>small{font-size:12px}.fixed-recruit-cta>a,.fixed-recruit-cta .fixed-consult{font-size:13px}.fixed-cta-message{justify-content:center}.fixed-cta-message small{display:none}.fixed-cta-message p{font-size:12px}.job-list a{align-items:flex-start}.job-list span{padding-top:23px;font-size:12px!important}.footer-bottom{font-size:12px}.recruit p:not(.eyebrow){font-size:14px}.service-list summary>div{width:calc(100% - 70px)}}
+
+/* Gentle once-only scroll reveal, with short staggered card entrances. */
+.scroll-reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease var(--reveal-delay,0ms),transform .7s cubic-bezier(.2,.65,.3,1) var(--reveal-delay,0ms)}
+.scroll-reveal.is-revealed{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.scroll-reveal{opacity:1;transform:none;transition:none}}
+@media print{.scroll-reveal{opacity:1;transform:none}.fixed-recruit-cta{display:none}}
